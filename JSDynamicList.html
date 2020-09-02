@@ -1,0 +1,29 @@
+
+<!doctype html>
+  <html lang="en" dir="ltr">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+      <title>Learning JS Dinamic List</title>
+  </head>
+
+  <body>
+    <h1>Learning Dynamic Lists</h1>
+    <h2>My Favorites Cars!</h2>
+    <ol id="carsList"></ol>
+
+  <script>
+
+    var cars = ["Audi","BMW","VW"];
+    var list = $("#carsList");
+
+    $.each(cars,function(index,value){
+      $("<li/>").text(value).appendTo(list);
+    });
+    console.log(cars)
+
+  </script>
+
+  </body>
+
+</html>

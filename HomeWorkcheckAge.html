@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Learning JS/HW: Check Age Function</title>
+
+</head>
+
+<body>
+
+  <h1>Check Age Function</h1>
+
+  Age: <input type="number" id="age" value="18">
+  <button onclick="checkAge()">Check Age</button>
+  <p id="demo"></p>
+
+  <script>
+    function checkAge() {
+      var age = document.getElementById("age").value;
+      var oldenough = (age < 18) ? "Go Home!":"Welcome";
+      document.getElementById("demo").innerHTML = oldenough ;
+    }
+
+  </script>
+
+</body>
+
+</html>

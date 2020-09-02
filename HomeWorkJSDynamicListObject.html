@@ -1,0 +1,49 @@
+<!doctype html>
+  <html lang="en" dir="ltr">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <meta charset="utf-8">
+      <title>Learning JS Dinamic List</title>
+  </head>
+
+  <body>
+    <h1>Learning Dynamic Lists</h1>
+    <h2>My Favorites Cars!</h2>
+    <ol id="carsList"></ol>
+
+    <input id="carTextInput" placeholder="Please Write a Car" type="text"/>
+    <button id="addCarButton">Add Car</button>
+
+  <script>
+
+    //var cars = ["Audi","BMW","VW"];
+    var cars = [{name:"Audi", type:"Sedan", color:"Gray", Horsepower: 400},
+                {name:"BMW", type:"Coupe", color:"White", horsepower: 350},
+                {name:"VW", type:"Hatch", color:"Black", horsepower: 300}];
+
+    function redrawList(){
+      var list = $("#carsList");
+      list.html("");
+
+      $.each(cars,function(index,value){
+
+        console.log(value);
+        $("<il/>").text("Car Name: "+ value.name +" Car Type: "+ value.type +" Car Horsepower: "+ value.horsepower).appendTo(list);
+      });
+    }
+      redrawList();
+
+      $("#addCarButton").click(function(){var carText = $("#carTextInput").val();
+      cars.push(carText);
+      console.log(cars);
+
+      redrawList();
+    });
+
+
+
+  </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+  <html lang="en" dir="ltr">
+  <head>
+      <title>Learning JS | Callbacks and Promises!</title>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+  <body>
+
+    <button id="elBoton">Hello!</button>
+
+  <script>
+
+  function constructTimeoutPromise(){
+    return new Promise(function(solve, reject){
+      setTimeout(resolve,2000);
+  });
+}
+          //BluePrint
+          //Write ASYNC! promise Code | Connect to DB
+          //var = promise = constructTimeoutPromise();
+constructTimeoutPromise().then(function(){
+  console.log("Connecting");
+  return constructTimeoutPromise();
+}).then(function(){
+      console.log("Paso 2: Performing Database Connection");
+    });
+
+
+
+  /*  function constructTimeoutPromise(){
+      return newPromise(function(resolve,reject){
+      setTimeOut(resolve,2000);
+    });
+    }
+
+     constructTimeOutPromise().then(function(){
+       console.log("Paso 1: Performing Database Connection");
+       return constructTimeOutPromise();
+    }).then(function(){
+      console.log("Paso 2: Reading execution from Database");
+      return constructTimeOutPromise();
+      }).then(function(){
+        console.log("Paso 3: Structuring Data Process");
+        return constructTimeOutPromise();
+      }).then(function(){
+        console.log("Paso 4: Proceeding with transactiion");
+        return constructTimeOutPromise();
+      }).then(function(){
+        console.log("Paso 5: Process Completed!");
+      });
+*/
+
+
+/*
+  setRecordatorio(function(){
+    console.log("Performing Database Connection");
+    setRecordatorio(function(){
+      console.log("Reading execution from Database");
+      setRecordatorio(function(){
+        console.log("Structuring Data Process");
+        setRecordatorio(function(){
+          console.log("Proceeding transaction");
+          setRecordatorio(function(){
+            console.log("Process Compoleted");
+          },2000);
+        },2000);
+      },2000);
+    },2000);
+  },2000);
+
+  console.log("Firast Print");
+*/
+
+
+  </script>
+
+
+
+
+  </body>
+
+</html>

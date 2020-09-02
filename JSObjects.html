@@ -1,0 +1,35 @@
+<!doctype html>
+  <html lang="en" dir="ltr">
+  <meta charset="utf-8">
+
+  <head>
+    <title>Learning JS Objects</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+    <body>
+      <h2>Objects in JS!</h2>
+
+      <script>
+      /* var cars = ["Audi","BMW","Volvo","VW"];
+          console.log(cars);
+         var carObject = {manufacturer:"Audi", year:"1976", millage: 10000};
+          alert(carObject.year); */
+
+      var car1 = {manufacture:"Audi",year:1976, alertFunction:function(){alert("alert!i!")}};
+      var car2 = {manufacture: "BMW", year:1986};
+      var car3 = {manufacture: "VW", year:1996};
+
+    /*  car1.manufacture = "Acura";
+      car1.numberOfWheels = 4;
+
+      var cars =[car1,car2,car3];
+
+      console.log(cars);
+    */
+      car1.alertFunction();
+
+      </script>
+
+    </body>
+</html>

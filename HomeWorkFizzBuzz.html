@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Learning JS FizZBuzZ</title>
+
+</head>
+
+<body>
+
+  <h1>FizZBuzZ</h1>
+
+  <script>
+    for (let n = 1; n <= 100; n++)
+    {
+      let resultado = "";
+      if (n % 3 == 0) resultado += "Fizz";
+      if (n % 5 == 0) resultado += "Buzz";
+      if (n % 10 == 0) resultado += "FizzyBuzzy"
+      console.log(resultado || n );
+    }
+
+  </script>
+
+</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+  <html lang="en" dir="ltr">
+  <meta charset="utf-8">
+
+  <head>
+
+    <title>Learning JS addButton</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  </head>
+
+    <body>
+
+      <h2>How to add a Button/input User Text JS/Q!</h2>
+
+      <input id="theInput" type="text" />
+      <button id="theButton">Show written Text</button>
+
+
+      <script>
+
+        $("#theButton").click(function(){
+
+          var textInputted = $("#theInput").val();
+          alert("Button Clicked" + textInputted);
+
+        });
+
+      </script>
+
+    </body>
+
+</html>

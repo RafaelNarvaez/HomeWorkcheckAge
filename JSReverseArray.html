@@ -1,0 +1,51 @@
+<!doctype html>
+  <html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Learning JS Arrays</title>
+
+  </head>
+
+  <body>
+
+    <h1>How to Reverse Arrays (2 Methods)!</h1>
+
+  <script>
+  //Reverse an Arrays 1st version
+    var fruits = ["Apple","Bananna","Carrot"];
+
+      function reverseArray(myArray){
+        var newArray = [];
+          newArrayIndex = myArray.lenght; i++{
+          newArray[--newArrayIndex] = myArray[i];
+      }
+    return newArray;
+    }
+    //before: console.log(fruits);
+    //after: console.log(reverseArray(fruits))
+  </script>
+
+  <script>
+//Reverse Array 2nd versio
+    var fruits = ["Apple","Bananna","Carrot"];
+
+    function reverseMyArray(myArray){
+      var newArray = [];
+      for(var i =myArray.lenght - 1; i>=0;i--){
+        newArray.push(myArray[i]);
+      }
+      return newArray;
+    }
+    //before: console.log(fruits);
+    //after:
+    console.log(reverseArray(fruits))
+
+
+  </script>
+
+  </body>
+
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+  <html lang="en" dir="ltr">
+
+  <head>
+
+    <meta charset="utf-8">
+
+    <title>Learning JS While FruitLoops</title>
+
+  </head>
+
+  <body>
+
+    <h1>Learning to FruitLoops!</h1>
+
+    <script>
+
+      var textToDisplay = "Wepa!Helloo";
+
+      var counter = 0;
+
+      var shouldContinue = true;
+
+      while(shouldContinue)
+      {
+        document.write("<h2>FruitLoops Iterations</h2>");
+        document.write(" <h3>counter is now " + counter + " " + textToDisplay + "</h3>");
+        counter+=4;
+
+        if(counter>5)
+        {
+          shouldContinue = false;
+        }
+      }
+    </script>
+
+  </body>
+
+</html>

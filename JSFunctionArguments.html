@@ -1,0 +1,41 @@
+<!doctype html>
+  <html lang="en" dir="ltr">
+  <meta charset="utf-8">
+
+  <head>
+    <title>Learning JS Functions as Arguments</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+
+    <body>
+      <h2>How to do Functions as Arguments in JS!</h2>
+
+      <script>
+      /* Different Types of Functions
+        1) function add(x,y){
+          return x+y;
+      }
+          console.log(add(3,4));
+        2)  function randonFunction(){
+          document.write("This is a Heading (H2)")
+          alert("This is the Alert!");
+        }
+          // makeAlert();
+          setTimeout(randonFunction, 2000);
+      */
+      function doThreeTimes(toDo){
+        for(var counter=0;counter<3;counter++){
+          toDo();
+        }
+      }
+
+      function randomFunction(){
+        alert("Hi");
+      }
+
+      doThreeTimes(randomFunction, 3);
+
+
+      </script>
+    </body>
+</html>
